@@ -1,0 +1,102 @@
+
+.visualizer{
+	min-width: 10rem;
+    
+    .card-header{
+        background-color: #e2e9e9;
+        font-weight: bold;
+        height: 4rem;    
+    }
+    
+}
+
+.header-visualizer{
+    font-weight: bold;
+    margin: 0;
+}
+
+.small {
+	max-width: 600px;
+	margin: auto !important;
+}
+
+.containermain {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    border-radius: 1rem;
+    background-color: rgb(220, 224, 224);
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
+}
+
+.excelbutton{
+    background-color: #57B25B !important;
+}
+
+#navbar .nav-item a{
+    color:#fff;
+}
+#navbar .dropdown-item{
+    color: #212529 !important;
+}
+
+img.resize {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2pt;
+    vertical-align: top;
+    margin-right: 0.3rem;
+}
+
+img.resize2 {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2pt;
+    vertical-align:text-bottom;
+    padding: 0rem !important;
+    margin-left: 0.5rem;
+}
+
+.card.footer{
+    margin-top: 7rem;
+	border-radius: 0rem;
+    text-align: right;
+    font-size: 10pt;
+}
+
+.footer .card-body {
+	flex: 1 1 auto;
+	min-height: 1px;
+	padding: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-right: 1rem;
+    
+
+}
+
+.footer.card{
+
+    background-color: #101942 !important;
+    border:0px solid #101942 !important;
+}
+
+.ar{
+    text-align: right !important;
+}
+
+.btnform{
+    margin-top: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.maincontent{
+    flex: 1;
+}
