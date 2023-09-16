@@ -7,7 +7,10 @@ import { Role } from '../helpers/helpersRole'
 import User from '../views/User.vue'
 import Citas from '../views/Cita.vue'
 import ReporteCitas from '../views/ReporteCitas.vue'
+import DisponibilidadDoc from '../views/DisponibilidadDoc.vue'
 //-----------------------------------
+//PERFIL PRUBLICO
+import PerfilPublicoApa from '../views/pruebaDemo.vue'
 /*
 import InfoAbcdario from '../views/InfoAbcdario.vue'
 import InfoImagenes from '../views/InfoImg.vue'
@@ -70,6 +73,17 @@ const routes = [
         name: 'reporteCitas',
         component: ReporteCitas,
         meta: { authorize: [Role.admin]}
+    },
+    {
+        path: '/disponibilidadDoc',
+        name: 'DisponibilidadDoc',
+        component: DisponibilidadDoc
+    },
+    //demoooooo
+    {
+        path: '/PerfilPublicoApa',
+        name: 'PerfilPublicoApa',
+        component: PerfilPublicoApa
     },
     /*
     {

@@ -6,14 +6,14 @@
                     src="../../assets/logo_umg.jpeg"
                     class="d-inline-block align-top resize"
                     alt=""
-                />Proyecto S</b-navbar-brand
+                />Proyecto Seminario</b-navbar-brand
             >
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav v-if="type === 'admin'">
-                   <!-- <b-nav-item><router-link to="/infoimg">Imagenes</router-link></b-nav-item>
+                    <b-nav-item><router-link to="/infoimg">Imagenes</router-link></b-nav-item>
                     <b-nav-item><router-link to="/infovideo">Videos</router-link></b-nav-item>
                     <b-nav-item-dropdown text="Evaluaciones">
                         <b-dropdown-item
@@ -26,24 +26,13 @@
                                 >Evaluacion 2</router-link
                             ></b-dropdown-item
                         >
-                    </b-nav-item-dropdown> -->
+                    </b-nav-item-dropdown>
 
-                    <!--   <b-nav-item-dropdown text="Informes">
+                    <b-nav-item-dropdown text="Informes">
+                        <!-- Using 'button-content' slot -->
                         <b-dropdown-item
                             ><router-link class="dropdown-item" to="/resultadosalumnos"
                                 >Informe Resultado Alumnos</router-link
-                            ></b-dropdown-item
-                        >
-                    </b-nav-item-dropdown>  -->
-                    <b-nav-item-dropdown text="Modulo Citas">
-                        <b-dropdown-item
-                            ><router-link class="dropdown-item" to="/creacionCita"
-                                >Creacion Cita</router-link
-                            ></b-dropdown-item
-                        >
-                        <b-dropdown-item
-                            ><router-link class="dropdown-item" to="/reporteCitas"
-                                >Reporte Cita</router-link
                             ></b-dropdown-item
                         >
                     </b-nav-item-dropdown>
@@ -58,10 +47,10 @@
 
                 <b-navbar-nav v-else-if="type === 'user'">
                     <b-nav-item><router-link to="/infoimg">Imagenes</router-link></b-nav-item>
-                   <!-- <b-nav-item><router-link to="/infovideo">Videos</router-link></b-nav-item>
+                    <b-nav-item><router-link to="/infovideo">Videos</router-link></b-nav-item>
                     <b-nav-item><router-link to="/Traductor">Traductor</router-link></b-nav-item>
                     <b-nav-item
-                        ><router-link to="/PracticaenVivo"
+                        ><router-link to="/PracticaenVivoDemo"
                             >Practica en Vivo</router-link
                         ></b-nav-item
                     >
@@ -76,31 +65,16 @@
                                 >Evaluacion 2</router-link
                             ></b-dropdown-item
                         >
-                    </b-nav-item-dropdown>-->
+                    </b-nav-item-dropdown>
                 </b-navbar-nav>
 
                 <!-- demooo -->
-                <b-navbar-nav v-else-if="type === 'demo'">
-                   <!--  <b-nav-item><router-link to="/infoimgDemo">Imagenes</router-link></b-nav-item>
-                    <b-nav-item><router-link to="/InfoVideosDemo">Videos</router-link></b-nav-item>
-                    <b-nav-item><router-link to="/Traductor">Traductor</router-link></b-nav-item>
+                <b-navbar-nav>
                     <b-nav-item
-                        ><router-link to="/PracticaenVivo"
-                            >Practica en Vivo</router-link
+                        ><router-link to="/disponibilidadDoc"
+                            >Informacion Doc</router-link
                         ></b-nav-item
                     >
-                    <b-nav-item-dropdown text="Evaluaciones">
-                        <b-dropdown-item
-                            ><router-link class="dropdown-item" to="/pruebaLevel1Demo"
-                                >Evaluacion 1</router-link
-                            ></b-dropdown-item
-                        >
-                        <b-dropdown-item
-                            ><router-link class="dropdown-item" to="/PruebaLevel2Demo"
-                                >Evaluacion 2</router-link
-                            ></b-dropdown-item
-                        >
-                    </b-nav-item-dropdown> -->
                 </b-navbar-nav>
 
                 <!-- Right aligned nav items -->
@@ -110,7 +84,7 @@
                         <template #button-content>
                             <span class="material-icons"> person </span>
                         </template>
-                        <b-dropdown-item @click="signOut()">Cerrar Sesión</b-dropdown-item>
+                        <b-dropdown-item @click="signOut()">Regresar Login</b-dropdown-item>
                     </b-nav-item-dropdown>
                 </b-navbar-nav>
             </b-collapse>

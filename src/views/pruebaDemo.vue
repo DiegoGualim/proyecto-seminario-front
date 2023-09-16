@@ -2,14 +2,17 @@
     <div class="content">
         <Nav />
         <div align="center">
-            <img alt="" src="../assets/logoedecri-sinfondo.png" width="200px" height="200px" />
+            <img alt="" src="../assets/FUNDACIONAPA-SIN.png" width="200px" height="200px" />
         </div>
 
         <h4>
-            Escuela De Educación Especial Y Centro De Rehabilitación Integral Edecri
+            FUNDACIÓN DOCTOR ALFONSO PONCE ARCHILA
             <br />
-            Coban Alta Verapaz
-            <a href="https://www.facebook.com/edecri" target="_blank" rel="noopener"
+            San Cristóbal, Alta Verapaz
+            <a
+                href="https://www.facebook.com/profile.php?id=100068380068173"
+                target="_blank"
+                rel="noopener"
                 >Mas información</a
             >.
         </h4>
@@ -19,12 +22,10 @@
                 <center>
                     <I>
                         <p>
-                            Construir oportunidades y condiciones paque los niños y jovenes con
-                            discapacidad de nuestra <br />
-                            de nuestra comunidad reciban la atencion que requieren para aprender y
-                            desarrollar sus habilidades <br />
-                            para una integracion familiar, educativa, productiva y social a la
-                            comunidad en un marco de derechos.
+                            Mejorar la calidad de vida de las personas no importando el estatus
+                            social,
+                            <br />
+                            mediante atención medica profesional y confiable<br />
                         </p>
                     </I>
                 </center>
@@ -36,12 +37,10 @@
                 <center>
                     <I>
                         <p>
-                            Construir oportunidades y condiciones paque los niños y jovenes con
-                            discapacidad de nuestra <br />
-                            de nuestra comunidad reciban la atencion que requieren para aprender y
-                            desarrollar sus habilidades <br />
-                            para una integracion familiar, educativa, productiva y social a la
-                            comunidad en un marco de derechos.
+                            Ser una Fundación moderna, segura, accesible para todos los
+                            Guatemaltecos <br />
+                            Brindando a nuestros pacientes la mejor cobertura en salud<br />
+                            con clidad y compromiso humando garantizado.
                         </p>
                     </I>
                 </center>
@@ -60,16 +59,19 @@
                 >
             </li>
         </ul>
+        <br />
+        <br />
         <Footer></Footer>
     </div>
 </template>
 
 <script>
+// @ is an alias to /src
 import Nav from '@/components/navbar/navbarDemo.vue'
 import Footer from '@/components/Footer/Footer.vue'
 
 export default {
-    name: 'PruebaDemo',
+    name: 'EditFactura',
     components: {
         Nav,
         Footer

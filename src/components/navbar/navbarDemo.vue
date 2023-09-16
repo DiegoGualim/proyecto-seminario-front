@@ -6,7 +6,7 @@
                     src="../../assets/logo_umg.jpeg"
                     class="d-inline-block align-top resize"
                     alt=""
-                />Proyecto S</b-navbar-brand
+                />Proyecto Seminario</b-navbar-brand
             >
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -37,7 +37,6 @@
                         >
                     </b-nav-item-dropdown>
                     <b-nav-item-dropdown text="Admin">
-                        <!-- Using 'button-content' slot -->
                         <b-dropdown-item
                             ><router-link class="dropdown-item" to="/user"
                                 >User</router-link
@@ -71,37 +70,11 @@
 
                 <!-- demooo -->
                 <b-navbar-nav>
-                    <b-nav-item><router-link to="/infoimgDemo">Imagenes</router-link></b-nav-item>
-                    <b-nav-item><router-link to="/InfoVideosDemo">Videos</router-link></b-nav-item>
                     <b-nav-item
-                        ><router-link to="/TraductorDemo">Traductor</router-link></b-nav-item
-                    >
-                    <b-nav-item
-                        ><router-link to="/PracticaenVivoDemo"
-                            >Practica en Vivo</router-link
+                        ><router-link to="/disponibilidadDoc"
+                            >Informacion Doc</router-link
                         ></b-nav-item
                     >
-                    <b-nav-item-dropdown text="Evaluaciones">
-                        <b-dropdown-item
-                            ><router-link class="dropdown-item" to="/pruebaLevel1Demo"
-                                >Evaluacion 1</router-link
-                            ></b-dropdown-item
-                        >
-                        <b-dropdown-item
-                            ><router-link class="dropdown-item" to="/PruebaLevel2Demo"
-                                >Evaluacion 2</router-link
-                            ></b-dropdown-item
-                        >
-                    </b-nav-item-dropdown>
-
-                    <b-nav-item-dropdown text="Informes">
-                        <!-- Using 'button-content' slot -->
-                        <b-dropdown-item
-                            ><router-link class="dropdown-item" to="/ResultadosAlumnosExternos"
-                                >Informe Resultado Alumnos</router-link
-                            ></b-dropdown-item
-                        >
-                    </b-nav-item-dropdown>
                 </b-navbar-nav>
 
                 <!-- Right aligned nav items -->
@@ -111,7 +84,7 @@
                         <template #button-content>
                             <span class="material-icons"> person </span>
                         </template>
-                        <b-dropdown-item @click="signOut()">Cerrar Sesión</b-dropdown-item>
+                        <b-dropdown-item @click="signOut()">Regresar Login</b-dropdown-item>
                     </b-nav-item-dropdown>
                 </b-navbar-nav>
             </b-collapse>

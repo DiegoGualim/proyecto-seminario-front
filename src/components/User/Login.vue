@@ -13,7 +13,12 @@
                 label-for="user"
                 class="text-left"
             >
-                <b-form-input id="user" v-model="form.username" placeholder="" required></b-form-input>
+                <b-form-input
+                    id="user"
+                    v-model="form.username"
+                    placeholder=""
+                    required
+                ></b-form-input>
             </b-form-group>
 
             <b-form-group
@@ -34,8 +39,8 @@
                 >Iniciar Sesión</b-button
             >
         </b-form>
-      <!-- <HR WIDTH="300" SIZE="6" COLOR="red"></HR>
-        <b-button href="/demo" variant="primary">Demo Estudiar</b-button>-->
+        <HR WIDTH="300" SIZE="6" COLOR="red"></HR>
+        <b-button href="/PerfilPublicoApa" variant="primary">Información</b-button>
         <!--<b-card class="mt-3" header="Form Data Result">
       <pre class="m-0">{{ form }}</pre>
     </b-card>-->
