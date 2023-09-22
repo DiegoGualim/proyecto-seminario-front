@@ -7,10 +7,14 @@ import { Role } from '../helpers/helpersRole'
 import User from '../views/User.vue'
 import Citas from '../views/Cita.vue'
 import ReporteCitas from '../views/ReporteCitas.vue'
-import DisponibilidadDoc from '../views/DisponibilidadDoc.vue'
+
 //-----------------------------------
 //PERFIL PRUBLICO
+import DisponibilidadDoc from '../views/DisponibilidadDoc.vue'
 import PerfilPublicoApa from '../views/pruebaDemo.vue'
+import Medicamentos  from '../views/Medicamentos.vue'
+import pdfProductos from '../views/ProductosLentes.vue'
+
 /*
 import InfoAbcdario from '../views/InfoAbcdario.vue'
 import InfoImagenes from '../views/InfoImg.vue'
@@ -84,6 +88,16 @@ const routes = [
         path: '/PerfilPublicoApa',
         name: 'PerfilPublicoApa',
         component: PerfilPublicoApa
+    },
+    {
+        path: '/Medicamentos',
+        name: 'Medicamentos',
+        component: Medicamentos
+    },
+    {
+        path: '/pdfProductos',
+        name: 'pdfProductos',
+        component: pdfProductos
     },
     /*
     {

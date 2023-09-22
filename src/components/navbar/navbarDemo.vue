@@ -70,11 +70,23 @@
 
                 <!-- demooo -->
                 <b-navbar-nav>
-                    <b-nav-item
-                        ><router-link to="/disponibilidadDoc"
-                            >Informacion Doc</router-link
-                        ></b-nav-item
-                    >
+                        <b-nav-item
+                            ><router-link to="/disponibilidadDoc"
+                                >Informacion Doc</router-link
+                            ></b-nav-item
+                        >
+                    <b-nav-item-dropdown text="Productos">
+                            <b-dropdown-item
+                                ><router-link class="dropdown-item" to="/Medicamentos"
+                                    >Medicamentos</router-link
+                                ></b-dropdown-item
+                            >
+                            <b-dropdown-item
+                                ><router-link class="dropdown-item" to="/pdfProductos"
+                                    >Productos</router-link
+                                ></b-dropdown-item
+                            >
+                    </b-nav-item-dropdown>
                 </b-navbar-nav>
 
                 <!-- Right aligned nav items -->
