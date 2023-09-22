@@ -14,6 +14,7 @@ import DisponibilidadDoc from '../views/DisponibilidadDoc.vue'
 import PerfilPublicoApa from '../views/pruebaDemo.vue'
 import Medicamentos  from '../views/Medicamentos.vue'
 import pdfProductos from '../views/ProductosLentes.vue'
+import graficasExternas from '../views/Dashboard.vue'
 
 /*
 import InfoAbcdario from '../views/InfoAbcdario.vue'
@@ -98,6 +99,11 @@ const routes = [
         path: '/pdfProductos',
         name: 'pdfProductos',
         component: pdfProductos
+    },
+    {
+        path: '/graficasExternas',
+        name: 'graficasExternas',
+        component: graficasExternas
     },
     /*
     {

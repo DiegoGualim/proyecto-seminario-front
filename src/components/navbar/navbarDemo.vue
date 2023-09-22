@@ -83,10 +83,11 @@
                             >
                             <b-dropdown-item
                                 ><router-link class="dropdown-item" to="/pdfProductos"
-                                    >Productos</router-link
+                                    >Lentes</router-link
                                 ></b-dropdown-item
                             >
                     </b-nav-item-dropdown>
+                    <b-nav-item><router-link to="/graficasExternas">Graficas</router-link></b-nav-item>
                 </b-navbar-nav>
 
                 <!-- Right aligned nav items -->
