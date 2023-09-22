@@ -16,37 +16,6 @@ import Medicamentos  from '../views/Medicamentos.vue'
 import pdfProductos from '../views/ProductosLentes.vue'
 import graficasExternas from '../views/Dashboard.vue'
 
-/*
-import InfoAbcdario from '../views/InfoAbcdario.vue'
-import InfoImagenes from '../views/InfoImg.vue'
-import InfoColores from '../views/InfoColores.vue'
-import InfoNumeros from '../views/InfoNumeros.vue'
-import InfoPronombres from '../views/InfoPronombres.vue'
-import InfoVideo from '../views/InfoVideo.vue'
-import VideoAbcdario from '../views/VideosAbcdario.vue'
-import VideoColores from '../views/VideoColores.vue'
-import VideoPronombres from '../views/VideoPronombres.vue'
-import PruebaLevel1 from '../views/EvaluacionLvl1.vue'
-import PruebaLevel2 from '../views/EvaluacionLvl2.vue'
-import ResultadosAlumnos from '../views/ResultadosAlumnos.vue'
-import PracticaenVivo from '../views/PracticaenVivo.vue'
-//DEMOOOOO
-import PruebaDemo from '../views/pruebaDemo.vue'
-import InfoVideoDemo from '../views/InfoVideoDemo.vue'
-import InfoImagenesDemo from '../views/InfoImgDemo.vue'
-import PruebaLevel1Demo from '../views/EvaluacionLvl1D.vue'
-import PruebaLevel2Demo from '../views/EvaluacionLvl2D.vue'
-import InfoAbecedarioDemo from '../views/InfoAbcdarioDemo.vue'
-import InfoColoresDemo from '../views/InfoColoresDemo.vue'
-import InfoNumerosDemo from '../views/InfoNumerosDemo.vue'
-import InfoPronombresDemo from '../views/InfoPronombresDemo.vue'
-import VideoAbcdarioDemo from '../views/VideosAbcdarioDemo.vue'
-import VideoColoresDemo from '../views/VideoColoresDemo.vue'
-import VideoPronombresDemo from '../views/VideoPronombresDemo.vue'
-import Traductor from '../views/Traductor.vue'
-import PracticaenVivoDemo from '../views/PracticaenVivoDemo.vue'
-import TraductorDemo from '../views/TraductorDemo.vue'
-import ResultadosAlumnosExternos from '../views/ResultadosAlumnosExternos.vue'*/
 Vue.use(VueRouter)
 
 const routes = [
@@ -71,13 +40,13 @@ const routes = [
         path: '/creacionCita',
         name: 'Citas',
         component: Citas,
-        meta: { authorize: [Role.admin]}
+        meta: { authorize: [Role.user, Role.admin] }
     },
     {
         path: '/reporteCitas',
         name: 'reporteCitas',
         component: ReporteCitas,
-        meta: { authorize: [Role.admin]}
+        meta: { authorize: [Role.user, Role.admin] }
     },
     {
         path: '/disponibilidadDoc',
@@ -105,160 +74,6 @@ const routes = [
         name: 'graficasExternas',
         component: graficasExternas
     },
-    /*
-    {
-        path: '/infoabcdario',
-        name: 'Imagenes Abecedario',
-        component: InfoAbcdario
-    },
-    {
-        path: '/infoimg',
-        name: 'Imagenes',
-        component: InfoImagenes,
-        meta: { authorize: [Role.user, Role.admin] }
-    },
-    {
-        path: '/infocolores',
-        name: 'InfoColores',
-        component: InfoColores
-    },
-    {
-        path: '/infonumeros',
-        name: 'InfoNumeros',
-        component: InfoNumeros
-    },
-    {
-        path: '/infopronombres',
-        name: 'InfoPronombres',
-        component: InfoPronombres
-    },
-    {
-        path: '/infovideo',
-        name: 'InfoVideo',
-        component: InfoVideo,
-        meta: { authorize: [Role.user, Role.admin] }
-    },
-    {
-        path: '/videoabcdario',
-        name: 'VideoAbcdario',
-        component: VideoAbcdario
-    },
-    {
-        path: '/videcolores',
-        name: 'VideoColores',
-        component: VideoColores
-    },
-    {
-        path: '/videpronombres',
-        name: 'VideoPronombres',
-        component: VideoPronombres
-    },
-    {
-        path: '/pruebanivel1',
-        name: 'PruebaLevel1',
-        component: PruebaLevel1,
-        meta: { authorize: [Role.user, Role.admin] }
-    },
-    {
-        path: '/pruebanivel2',
-        name: 'PruebaLevel2',
-        component: PruebaLevel2,
-        meta: { authorize: [Role.user, Role.admin] }
-    },
-    {
-        path: '/resultadosalumnos',
-        name: 'ResultadosAlumnos',
-        component: ResultadosAlumnos,
-        meta: { authorize: [Role.user, Role.admin] }
-    },
-    {
-        path: '/PracticaenVivo',
-        name: 'PracticaenVivo',
-        component: PracticaenVivo,
-        meta: { authorize: [Role.user, Role.admin] }
-    },
-    {
-        path: '/Traductor',
-        name: Traductor,
-        component: Traductor,
-        meta: { authorize: [Role.user] }
-    },
-    //demoooooo
-    {
-        path: '/demo',
-        name: 'PruebaDemo',
-        component: PruebaDemo
-    },
-    {
-        path: '/InfoVideosDemo',
-        name: 'InfoVideoDemo',
-        component: InfoVideoDemo
-    },
-    {
-        path: '/infoimgDemo',
-        name: InfoImagenesDemo,
-        component: InfoImagenesDemo
-    },
-    {
-        path: '/pruebaLevel1Demo',
-        name: PruebaLevel1Demo,
-        component: PruebaLevel1Demo
-    },
-    {
-        path: '/PruebaLevel2Demo',
-        name: PruebaLevel2Demo,
-        component: PruebaLevel2Demo
-    },
-    {
-        path: '/InfoAbecedarioDemo',
-        name: InfoAbecedarioDemo,
-        component: InfoAbecedarioDemo
-    },
-    {
-        path: '/InfoColoresDemo',
-        name: InfoColoresDemo,
-        component: InfoColoresDemo
-    },
-    {
-        path: '/InfoNumerosDemo',
-        name: InfoNumerosDemo,
-        component: InfoNumerosDemo
-    },
-    {
-        path: '/InfoPronombresDemo',
-        name: InfoPronombresDemo,
-        component: InfoPronombresDemo
-    },
-    {
-        path: '/InfoVideoAbcdarioDemo',
-        name: VideoAbcdarioDemo,
-        component: VideoAbcdarioDemo
-    },
-    {
-        path: '/VideoColoresDemo',
-        name: VideoColoresDemo,
-        component: VideoColoresDemo
-    },
-    {
-        path: '/VideoPronombresDemo',
-        name: VideoPronombresDemo,
-        component: VideoPronombresDemo
-    },
-    {
-        path: '/TraductorDemo',
-        name: TraductorDemo,
-        component: TraductorDemo
-    },
-    {
-        path: '/PracticaenVivoDemo',
-        name: 'PracticaenVivoDemo',
-        component: PracticaenVivoDemo
-    },
-    {
-        path: '/ResultadosAlumnosExternos',
-        name: 'ResultadosAlumnosExternos',
-        component: ResultadosAlumnosExternos
-    }, */
     {
         path: '/about',
         name: 'About',
