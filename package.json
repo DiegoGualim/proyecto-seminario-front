@@ -19,6 +19,7 @@
     "read-excel-file": "^5.6.0",
     "veu": "^1.0.1",
     "vue": "^2.6.12",
+    "vue-carousel-3d": "^1.0.1",
     "vue-chartjs": "^3.5.1",
     "vue-cli": "^2.9.6",
     "vue-multiselect": "^2.1.6",

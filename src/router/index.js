@@ -12,9 +12,11 @@ import ReporteCitas from '../views/ReporteCitas.vue'
 //PERFIL PRUBLICO
 import DisponibilidadDoc from '../views/DisponibilidadDoc.vue'
 import PerfilPublicoApa from '../views/pruebaDemo.vue'
-import Medicamentos  from '../views/Medicamentos.vue'
+import Medicamentos from '../views/Medicamentos.vue'
 import pdfProductos from '../views/ProductosLentes.vue'
 import graficasExternas from '../views/Dashboard.vue'
+import serviciosMedicos from '../views/ServiciosMedicos.vue'
+import Noticias from '../views/Noticias.vue'
 
 Vue.use(VueRouter)
 
@@ -73,6 +75,16 @@ const routes = [
         path: '/graficasExternas',
         name: 'graficasExternas',
         component: graficasExternas
+    },
+    {
+        path: '/serviciosMedicos',
+        name: 'serviciosMedicos',
+        component: serviciosMedicos
+    },
+    {
+        path: '/Noticias',
+        name: 'Noticias',
+        component: Noticias
     },
     {
         path: '/about',

@@ -70,24 +70,32 @@
 
                 <!-- demooo -->
                 <b-navbar-nav>
-                        <b-nav-item
-                            ><router-link to="/disponibilidadDoc"
-                                >Informacion Doc</router-link
-                            ></b-nav-item
-                        >
+                    <b-nav-item
+                        ><router-link to="/disponibilidadDoc"
+                            >Informacion Doc</router-link
+                        ></b-nav-item
+                    >
                     <b-nav-item-dropdown text="Productos">
-                            <b-dropdown-item
-                                ><router-link class="dropdown-item" to="/Medicamentos"
-                                    >Medicamentos</router-link
-                                ></b-dropdown-item
-                            >
-                            <b-dropdown-item
-                                ><router-link class="dropdown-item" to="/pdfProductos"
-                                    >Lentes</router-link
-                                ></b-dropdown-item
-                            >
+                        <b-dropdown-item
+                            ><router-link class="dropdown-item" to="/Medicamentos"
+                                >Medicamentos</router-link
+                            ></b-dropdown-item
+                        >
+                        <b-dropdown-item
+                            ><router-link class="dropdown-item" to="/pdfProductos"
+                                >Lentes</router-link
+                            ></b-dropdown-item
+                        >
                     </b-nav-item-dropdown>
-                    <b-nav-item><router-link to="/graficasExternas">Graficas</router-link></b-nav-item>
+                    <b-nav-item
+                        ><router-link to="/graficasExternas">Graficas</router-link></b-nav-item
+                    >
+                    <b-nav-item
+                        ><router-link to="/serviciosMedicos"
+                            >Servicios Medicos</router-link
+                        ></b-nav-item
+                    >
+                    <b-nav-item><router-link to="/Noticias">Noticias</router-link></b-nav-item>
                 </b-navbar-nav>
 
                 <!-- Right aligned nav items -->
