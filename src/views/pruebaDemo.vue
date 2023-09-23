@@ -59,6 +59,17 @@
                 >
             </li>
         </ul>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.2764415836546!2d-90.49363152391192!3d15.361507757993326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858a377141f51d11%3A0xdabb0005a90566e4!2sHospital%20Oftalmol%C3%B3gico%2C%20Fundaci%C3%B3n%20Dr.%20Alfonso%20Ponce%20Archila!5e0!3m2!1ses-419!2sgt!4v1695437929218!5m2!1ses-419!2sgt"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
         <br />
         <br />
         <Footer></Footer>
