@@ -7,6 +7,7 @@ import { Role } from '../helpers/helpersRole'
 import User from '../views/User.vue'
 import Citas from '../views/Cita.vue'
 import ReporteCitas from '../views/ReporteCitas.vue'
+import ModuloDateDocInt from '../views/Iframe.vue'
 
 //-----------------------------------
 //PERFIL PRUBLICO
@@ -16,7 +17,6 @@ import Medicamentos from '../views/Medicamentos.vue'
 import pdfProductos from '../views/ProductosLentes.vue'
 import graficasExternas from '../views/Dashboard.vue'
 import serviciosMedicos from '../views/ServiciosMedicos.vue'
-import Noticias from '../views/Noticias.vue'
 
 Vue.use(VueRouter)
 
@@ -51,8 +51,14 @@ const routes = [
         meta: { authorize: [Role.user, Role.admin] }
     },
     {
+        path: '/ModuloDateDocInt',
+        name: 'ModuloDateDocInt',
+        component: ModuloDateDocInt,
+        meta: { authorize: [Role.user, Role.admin] }
+    },
+    {
         path: '/disponibilidadDoc',
-        name: 'DisponibilidadDoc',
+        name: 'ModuloDateDocInt',
         component: DisponibilidadDoc
     },
     //demoooooo
@@ -80,11 +86,6 @@ const routes = [
         path: '/serviciosMedicos',
         name: 'serviciosMedicos',
         component: serviciosMedicos
-    },
-    {
-        path: '/Noticias',
-        name: 'Noticias',
-        component: Noticias
     },
     {
         path: '/about',

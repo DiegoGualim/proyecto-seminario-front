@@ -20,7 +20,7 @@ export default {
         Footer
     },
     data: () => ({
-        ruta: 'https://traductor-edecri.vercel.app/'
+        ruta: 'https://fundacion-php-e25fa6e4de23.herokuapp.com/login.php'
     })
 }
 </script>

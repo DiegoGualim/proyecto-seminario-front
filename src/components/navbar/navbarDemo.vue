@@ -95,7 +95,6 @@
                             >Servicios Medicos</router-link
                         ></b-nav-item
                     >
-                    <b-nav-item><router-link to="/Noticias">Noticias</router-link></b-nav-item>
                 </b-navbar-nav>
 
                 <!-- Right aligned nav items -->
