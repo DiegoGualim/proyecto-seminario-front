@@ -207,13 +207,16 @@ export default {
         //async deleteRow(item) {
         deleteRow(item) {
             let objetJson = {
-                id_cita: item.id_cita
+                id_receta_medica: item.id_receta_medica
             }
             console.log(objetJson, 'mi pana')
             const a = document.createElement('a')
             document.body.appendChild(a)
             a.style = 'display: none'
-            fetch(`${process.env.VUE_APP_BACKEND}/api/v1/cita/pdf`, requestOptions.post(objetJson))
+            fetch(
+                `${process.env.VUE_APP_BACKEND}/api/v1/recetaMedica/pdf`,
+                requestOptions.post(objetJson)
+            )
                 .then((res) => res.arrayBuffer())
                 .then((data) => {
                     const blob = new Blob([data], { type: 'application/pdf' })
@@ -266,7 +269,7 @@ export default {
         // new methods
         async fetchData() {
             this.items = await requestHandler.async_fetch(
-                `${process.env.VUE_APP_BACKEND}/api/v1/cita`,
+                `${process.env.VUE_APP_BACKEND}/api/v1/recetaMedica`,
                 requestOptions.get()
             )
         }

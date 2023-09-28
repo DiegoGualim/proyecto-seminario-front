@@ -56,23 +56,23 @@
                             required
                         ></b-form-input> </b-form-group
                 ></b-col>
-            </b-row>                
+            </b-row>
             <b-form-group id="input-group-6" label-for="textarea">
                 <b-form-textarea
-                id="textarea"
-                v-model="form.diagnostico"
-                placeholder="Molestia Actual"
-                rows="3"
-                max-rows="6"
+                    id="textarea"
+                    v-model="form.diagnostico"
+                    placeholder="Molestia Actual"
+                    rows="3"
+                    max-rows="6"
                 ></b-form-textarea>
             </b-form-group>
             <b-form-group id="input-group-6" label-for="textarea">
                 <b-form-textarea
-                id="textarea"
-                v-model="form.medicamentos"
-                placeholder="Medicamentos"
-                rows="3"
-                max-rows="6"
+                    id="textarea"
+                    v-model="form.medicamentos"
+                    placeholder="Medicamentos"
+                    rows="3"
+                    max-rows="6"
                 ></b-form-textarea>
             </b-form-group>
 
@@ -117,7 +117,7 @@ export default {
             console.log(this.form)
             const reconsultation = await requestHandler
                 .async_fetch(
-                    `${process.env.VUE_APP_BACKEND}/api/v1/cita`,
+                    `${process.env.VUE_APP_BACKEND}/api/v1/recetaMedica`,
                     requestOptions.post(this.form)
                 )
                 .then(() => {
