@@ -13,7 +13,7 @@
 
 <script>
 // @ is an alias to /src
-import TableCitas from '@/components/Citas/Table.vue'
+import TableCitas from '@/components/Receta/Table.vue'
 import Nav from '@/components/navbar/navbar.vue'
 import Footer from '@/components/Footer/Footer.vue'
 

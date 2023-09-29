@@ -5,8 +5,8 @@ import Login from '../views/Login.vue'
 import { Role } from '../helpers/helpersRole'
 //---Proyecto Seminario Rafa--------
 import User from '../views/User.vue'
-import Citas from '../views/Cita.vue'
-import ReporteCitas from '../views/ReporteCitas.vue'
+import RecetaMedica from '../views/RecetaMedica.vue'
+import ReporteRecetaMedica from '../views/ReporteRecetaMedica.vue'
 import ModuloDateDocInt from '../views/Iframe.vue'
 
 //-----------------------------------
@@ -39,15 +39,15 @@ const routes = [
         meta: { authorize: [Role.admin] }
     },
     {
-        path: '/creacionCita',
-        name: 'Citas',
-        component: Citas,
+        path: '/RecetaMedica',
+        name: 'RecetaMedica',
+        component: RecetaMedica,
         meta: { authorize: [Role.user, Role.admin] }
     },
     {
-        path: '/reporteCitas',
-        name: 'reporteCitas',
-        component: ReporteCitas,
+        path: '/ReporteRecetaMedica',
+        name: 'ReporteRecetaMedica',
+        component: ReporteRecetaMedica,
         meta: { authorize: [Role.user, Role.admin] }
     },
     {

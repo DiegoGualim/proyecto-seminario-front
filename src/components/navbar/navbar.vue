@@ -15,12 +15,12 @@
                 <b-navbar-nav v-if="type === 'admin'">
                     <b-nav-item-dropdown text="Modulo Recetas">
                         <b-dropdown-item
-                            ><router-link class="dropdown-item" to="/creacionCita"
+                            ><router-link class="dropdown-item" to="/RecetaMedica"
                                 >Creacion Recetas</router-link
                             ></b-dropdown-item
                         >
                         <b-dropdown-item
-                            ><router-link class="dropdown-item" to="/reporteCitas"
+                            ><router-link class="dropdown-item" to="/ReporteRecetaMedica"
                                 >Reporte Recetas</router-link
                             ></b-dropdown-item
                         >
